@@ -13,7 +13,7 @@ public class ElevatorController {
 	public void gotoFloor(int destination) {
 		if (destination == currentFloor)
 			return;
-	}
+	
 	
 	Direction direction;
 	
@@ -23,12 +23,14 @@ public class ElevatorController {
 		direction = Direction.DOWN;
 	}
 	
+	motor.move(direction);
+	
 	System.out.println("Starting Elevator [" + id + "] Start Floor : " + currentFloor);
 	currentFloor = destination;
 	
 	System.out.println("=>> Now Floor: " + currentFloor + " motor : " + motor.getClass().getName());
 	
 	motor.stop();
-
+	}
 }
 

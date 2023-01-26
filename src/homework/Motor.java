@@ -13,7 +13,7 @@ public abstract class Motor {
 	
 	public void move(Direction direction) {
 		MotorStatus motorStatus = this.getMotorStatus();
-		if (motorStatus == motorStatus.MOVING)
+		if (motorStatus == MotorStatus.MOVING)
 			return;
 		moveMotor(direction);
 		setMortorStatus(MotorStatus.MOVING);
