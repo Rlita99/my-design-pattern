@@ -24,7 +24,7 @@ public class Dept implements CommonInterface{
 	}
 	
 	public void sayWokrers() {
-		System.out.println("부서원 : ");
+		System.out.println("---- 부서원 ---- ");
 		for (Worker worker : workers){
 			worker.say();
 		}

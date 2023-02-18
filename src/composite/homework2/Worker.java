@@ -11,7 +11,7 @@ public class Worker implements CommonInterface {
 	
 	@Override
 	public void say() {
-		System.out.println("나는 " + name + "(이)야. 나는 " + job + "야.");
+		System.out.println(name + " : "+ job);
 		
 	}
 	
